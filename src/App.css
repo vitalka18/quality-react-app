@@ -1,5 +1,10 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
@@ -25,18 +30,67 @@
 
 .Todos-App {
   display: inline-block;
+  width: 600px;
   padding-top: 20px;
   text-align: left;
 }
 
-input {
+.Todo-Foot {
+  padding: 8px 5px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  font-size: 12px;
+}
+
+.Todo-Foot span {
+  display: inline-block;
+  line-height: 1;
+}
+
+.Todo-Foot span + span {
+  margin-left: 15px;
+}
+
+.Todo-Filter {
+  margin-top: 20px;
+  padding: 9px 0;
+  border-top: 2px solid #000;
+  font-size: 12px;
+}
+
+.Todo-Filter a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+}
+
+.count {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 3px;;
+  background: #deb887;
+  color: #333;
+  vertical-align: middle;
+}
+
+input[type="text"] {
+  width: 100%;
   font-size: 20px;
 }
 
 ul {
-  padding: 0;
+  border-top: 2px solid #000;
+  margin: 0 0 10px;
+  padding: 10px 0 0;
 }
 
 li {
+  padding: 10px 0;
   list-style-type: none;
+}
+
+li input {
+    position: relative;
+    top: 1px;
+    margin-right: 10px;
 }
